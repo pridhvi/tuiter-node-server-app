@@ -1,11 +1,22 @@
 import posts from "./tuits.js";
 let tuits = posts;
 
+const newTuitTemplate = {
+    likes: 0,
+    liked: false,
+    userName: "Pridhvi Muthuraju",
+    handle: "@pridhvi",
+    profilePicture: "/images/owner.jpg",
+}
+
 const createTuit = (req, res) => {
-    const newTuit = req.body;
+    let newTuit = req.body;
+    newTuit = {
+        ...newTuit,
+        ...newTuitTemplate
+    }
     newTuit._id = (new Date()).getTime() + '';
-    newTuit.likes = 0;
-    newTuit.liked = false;
+
     tuits.push(newTuit);
     res.json(newTuit);
 }
