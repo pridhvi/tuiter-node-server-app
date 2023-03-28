@@ -18,6 +18,7 @@ const createTuit = (req, res) => {
         ...newTuitTemplate
     }
     newTuit._id = (new Date()).getTime() + '';
+    newTuit.time = (new Date()).getTime()
 
     tuits.push(newTuit);
     res.json(newTuit);
