@@ -3,7 +3,9 @@ let tuits = posts;
 
 const newTuitTemplate = {
     likes: 0,
+    dislikes: 0,
     liked: false,
+    disliked: false,
     userName: "Pridhvi Muthuraju",
     handle: "@pridhvi",
     profilePicture: "/images/owner.jpg",
