@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const schema = mongoose.Schema({
+    userName: String,
     handle: String,
     time: Number,
     tuit: String,
