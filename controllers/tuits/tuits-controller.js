@@ -6,6 +6,8 @@ const newTuitTemplate = {
     dislikes: 0,
     liked: false,
     disliked: false,
+    replies: 0,
+    retuits: 0,
     userName: "Pridhvi Muthuraju",
     handle: "@pridhvi",
     profilePicture: "/images/owner.jpg",
