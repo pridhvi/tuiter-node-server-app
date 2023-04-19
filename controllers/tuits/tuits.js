@@ -1,23 +1,44 @@
 export default [
     {
-        "_id": "123", "topic": "Space", "username": "SpaceX",
-        "handle": "@spacex", "time": "2h", "image": "spacex.png",
-        "title": "SpaceX's Mission",
-        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
-        "liked": true, "likes": 2345, "replies": 123, "retuits": 432
+        "_id": 123,
+        "userName": "SpaceX",
+        "handle": "@spacex",
+        "time": 1660867200000,
+        "tuit": "You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars",
+        "profilePicture": "/images/spacex-logo.jpg",
+        "liked": true,
+        "disliked": false,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "dislikes": 3456
     },
     {
-        "_id": "234", "topic": "Traffic", "username": "The Boring Company",
-        "handle": "@boringcompany", "time": "2h", "image": "boring2.jpg",
-        "title": "The Boring Company fixing traffic",
-        "tuit": "The Boring Company (TBC) is an American infrastructure and tunnel construction services company founded by Elon Musk. Its ongoing and proposed projects are designed for intra-city ('loop') transit systems.",
-        "liked": true, "likes": 2345, "replies": 321, "retuits": 432
+        "_id": 323,
+        "userName": "Tesla",
+        "handle": "@tesla",
+        "time": 1614556800000,
+        "tuit": "Autopilot is an advanced driver assistance system that assists your car with steering, accelerating and braking for other vehicles and pedestrians within its lane. It assists with the most burdensome parts of driving and work alongside features like emergency braking, collision warning and blind-spot monitoring. With Full Self-Driving (FSD) capability, you will get access to a suite of more advanced driver assistance features, designed to provide more active guidance and assisted driving under your active supervision.",
+        "profilePicture": "/images/tesla-logo.png",
+        "liked": false,
+        "disliked": false,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "dislikes": 3456
     },
     {
-        "_id": "345", "topic": "Brain Injuries", "username": "Neurolink",
-        "handle": "@neurolink", "time": "3h", "image": "neurolink.jpg",
-        "title": "Neurolink fixes paralisis and blindness",
-        "tuit": "Neurolink is an American company founded by Elon Musk that specializes in brain to computer integration. The first application will be to cure spinal cord injuries so that paraplegics can walk again. Other applications include curing blindness and mental disorders.",
-        "liked": true, "likes": 3456, "replies": 345, "retuits": 654
-    },
+        "_id": 423,
+        "userName": "SpaceX",
+        "handle": "@spacex",
+        "tuit": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.",
+        "time": 1680041790643,
+        "profilePicture": "/images/spacex-logo.jpg",
+        "liked": true,
+        "disliked": false,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "dislikes": 3456
+    }
 ];

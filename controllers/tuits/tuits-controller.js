@@ -1,11 +1,27 @@
 import posts from "./tuits.js";
 let tuits = posts;
 
+const newTuitTemplate = {
+    likes: 0,
+    dislikes: 0,
+    liked: false,
+    disliked: false,
+    replies: 0,
+    retuits: 0,
+    userName: "Pridhvi Muthuraju",
+    handle: "@pridhvi",
+    profilePicture: "/images/owner.jpg",
+}
+
 const createTuit = (req, res) => {
-    const newTuit = req.body;
+    let newTuit = req.body;
+    newTuit = {
+        ...newTuit,
+        ...newTuitTemplate
+    }
     newTuit._id = (new Date()).getTime() + '';
-    newTuit.likes = 0;
-    newTuit.liked = false;
+    newTuit.time = (new Date()).getTime();
+
     tuits.push(newTuit);
     res.json(newTuit);
 }
@@ -17,10 +33,8 @@ const findTuits = (req, res) => {
 const updateTuit = (req, res) => {
     const tuitIdToUpdate = req.params.tid;
     const updates = req.body;
-    const tuitIndex = tuits.findIndex(
-        (t) => t._id === tuitIdToUpdate)
-    tuits[tuitIndex] =
-        { ...tuits[tuitIndex], ...updates };
+    const tuitIndex = tuits.findIndex(t => t._id == tuitIdToUpdate)
+    tuits[tuitIndex] = { ...tuits[tuitIndex], ...updates };
     res.sendStatus(200);
 }
 
